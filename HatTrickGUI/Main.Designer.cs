@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.main_table = new System.Windows.Forms.TableLayoutPanel();
+            this.horizontal_separator_4 = new System.Windows.Forms.Label();
+            this.horizontal_separator_3 = new System.Windows.Forms.Label();
+            this.horizontal_separator_2 = new System.Windows.Forms.Label();
+            this.horizontal_separator_1 = new System.Windows.Forms.Label();
+            this.where_used_textbox = new System.Windows.Forms.TextBox();
+            this.footprint_checked_by_textbox = new System.Windows.Forms.TextBox();
+            this.footprint_ok_checkbox = new System.Windows.Forms.CheckBox();
+            this.symbol_checked_by_textbox = new System.Windows.Forms.TextBox();
+            this.symbol_ok_checkbox = new System.Windows.Forms.CheckBox();
             this.datasheet_table = new System.Windows.Forms.TableLayoutPanel();
             this.datasheet_text_box = new System.Windows.Forms.TextBox();
             this.datasheet_button = new System.Windows.Forms.Button();
@@ -68,20 +77,19 @@
             this.symbol_file_table = new System.Windows.Forms.TableLayoutPanel();
             this.symbol_file_textbox = new System.Windows.Forms.TextBox();
             this.symbol_file_button = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.symbol_ok_checkbox = new System.Windows.Forms.CheckBox();
-            this.symbol_checked_by_textbox = new System.Windows.Forms.TextBox();
             this.footprint_checked_date_datetimepicker = new System.Windows.Forms.DateTimePicker();
             this.symbol_checked_date_datetimepicker = new System.Windows.Forms.DateTimePicker();
-            this.footprint_ok_checkbox = new System.Windows.Forms.CheckBox();
-            this.footprint_checked_by_textbox = new System.Windows.Forms.TextBox();
-            this.where_used_textbox = new System.Windows.Forms.TextBox();
+            this.hoizontal_separator_0 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tools_table = new System.Windows.Forms.TableLayoutPanel();
             this.submit_button = new System.Windows.Forms.Button();
+            this.discard_changes_button = new System.Windows.Forms.Button();
             this.main_table.SuspendLayout();
             this.datasheet_table.SuspendLayout();
             this.footprint_file_table.SuspendLayout();
             this.symbol_file_table.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tools_table.SuspendLayout();
             this.SuspendLayout();
             // 
             // main_table
@@ -91,7 +99,10 @@
             this.main_table.ColumnCount = 2;
             this.main_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.main_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.main_table.Controls.Add(this.submit_button, 1, 25);
+            this.main_table.Controls.Add(this.horizontal_separator_4, 0, 24);
+            this.main_table.Controls.Add(this.horizontal_separator_3, 0, 21);
+            this.main_table.Controls.Add(this.horizontal_separator_2, 0, 16);
+            this.main_table.Controls.Add(this.horizontal_separator_1, 0, 11);
             this.main_table.Controls.Add(this.where_used_textbox, 1, 23);
             this.main_table.Controls.Add(this.footprint_checked_by_textbox, 1, 19);
             this.main_table.Controls.Add(this.footprint_ok_checkbox, 1, 18);
@@ -132,11 +143,13 @@
             this.main_table.Controls.Add(this.symbol_file_table, 1, 12);
             this.main_table.Controls.Add(this.footprint_checked_date_datetimepicker, 1, 20);
             this.main_table.Controls.Add(this.symbol_checked_date_datetimepicker, 1, 15);
+            this.main_table.Controls.Add(this.hoizontal_separator_0, 0, 5);
+            this.main_table.Controls.Add(this.tools_table, 1, 25);
             this.main_table.Dock = System.Windows.Forms.DockStyle.Top;
             this.main_table.Location = new System.Drawing.Point(0, 0);
             this.main_table.Margin = new System.Windows.Forms.Padding(0);
             this.main_table.Name = "main_table";
-            this.main_table.RowCount = 26;
+            this.main_table.RowCount = 27;
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -163,8 +176,96 @@
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.main_table.Size = new System.Drawing.Size(461, 895);
+            this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.main_table.Size = new System.Drawing.Size(461, 905);
             this.main_table.TabIndex = 0;
+            // 
+            // horizontal_separator_4
+            // 
+            this.horizontal_separator_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.horizontal_separator_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.main_table.SetColumnSpan(this.horizontal_separator_4, 2);
+            this.horizontal_separator_4.Location = new System.Drawing.Point(3, 846);
+            this.horizontal_separator_4.Name = "horizontal_separator_4";
+            this.horizontal_separator_4.Size = new System.Drawing.Size(455, 2);
+            this.horizontal_separator_4.TabIndex = 124;
+            // 
+            // horizontal_separator_3
+            // 
+            this.horizontal_separator_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.horizontal_separator_3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.main_table.SetColumnSpan(this.horizontal_separator_3, 2);
+            this.horizontal_separator_3.Location = new System.Drawing.Point(3, 721);
+            this.horizontal_separator_3.Name = "horizontal_separator_3";
+            this.horizontal_separator_3.Size = new System.Drawing.Size(455, 2);
+            this.horizontal_separator_3.TabIndex = 123;
+            // 
+            // horizontal_separator_2
+            // 
+            this.horizontal_separator_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.horizontal_separator_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.main_table.SetColumnSpan(this.horizontal_separator_2, 2);
+            this.horizontal_separator_2.Location = new System.Drawing.Point(3, 566);
+            this.horizontal_separator_2.Name = "horizontal_separator_2";
+            this.horizontal_separator_2.Size = new System.Drawing.Size(455, 2);
+            this.horizontal_separator_2.TabIndex = 122;
+            // 
+            // horizontal_separator_1
+            // 
+            this.horizontal_separator_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.horizontal_separator_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.main_table.SetColumnSpan(this.horizontal_separator_1, 2);
+            this.horizontal_separator_1.Location = new System.Drawing.Point(3, 411);
+            this.horizontal_separator_1.Name = "horizontal_separator_1";
+            this.horizontal_separator_1.Size = new System.Drawing.Size(455, 2);
+            this.horizontal_separator_1.TabIndex = 121;
+            // 
+            // where_used_textbox
+            // 
+            this.where_used_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.where_used_textbox.Location = new System.Drawing.Point(133, 773);
+            this.where_used_textbox.Multiline = true;
+            this.where_used_textbox.Name = "where_used_textbox";
+            this.where_used_textbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.where_used_textbox.Size = new System.Drawing.Size(325, 54);
+            this.where_used_textbox.TabIndex = 19;
+            // 
+            // footprint_checked_by_textbox
+            // 
+            this.footprint_checked_by_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.footprint_checked_by_textbox.Location = new System.Drawing.Point(133, 648);
+            this.footprint_checked_by_textbox.Name = "footprint_checked_by_textbox";
+            this.footprint_checked_by_textbox.Size = new System.Drawing.Size(325, 22);
+            this.footprint_checked_by_textbox.TabIndex = 16;
+            // 
+            // footprint_ok_checkbox
+            // 
+            this.footprint_ok_checkbox.AutoSize = true;
+            this.footprint_ok_checkbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.footprint_ok_checkbox.Location = new System.Drawing.Point(133, 618);
+            this.footprint_ok_checkbox.Name = "footprint_ok_checkbox";
+            this.footprint_ok_checkbox.Size = new System.Drawing.Size(325, 24);
+            this.footprint_ok_checkbox.TabIndex = 15;
+            this.footprint_ok_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // symbol_checked_by_textbox
+            // 
+            this.symbol_checked_by_textbox.AcceptsReturn = true;
+            this.symbol_checked_by_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.symbol_checked_by_textbox.Location = new System.Drawing.Point(133, 493);
+            this.symbol_checked_by_textbox.Name = "symbol_checked_by_textbox";
+            this.symbol_checked_by_textbox.Size = new System.Drawing.Size(325, 22);
+            this.symbol_checked_by_textbox.TabIndex = 12;
+            // 
+            // symbol_ok_checkbox
+            // 
+            this.symbol_ok_checkbox.AutoSize = true;
+            this.symbol_ok_checkbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.symbol_ok_checkbox.Location = new System.Drawing.Point(133, 463);
+            this.symbol_ok_checkbox.Name = "symbol_ok_checkbox";
+            this.symbol_ok_checkbox.Size = new System.Drawing.Size(325, 24);
+            this.symbol_ok_checkbox.TabIndex = 11;
+            this.symbol_ok_checkbox.UseVisualStyleBackColor = true;
             // 
             // datasheet_table
             // 
@@ -622,35 +723,6 @@
             this.symbol_file_button.Text = "...";
             this.symbol_file_button.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.main_table);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(482, 653);
-            this.panel1.TabIndex = 1;
-            // 
-            // symbol_ok_checkbox
-            // 
-            this.symbol_ok_checkbox.AutoSize = true;
-            this.symbol_ok_checkbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.symbol_ok_checkbox.Location = new System.Drawing.Point(133, 463);
-            this.symbol_ok_checkbox.Name = "symbol_ok_checkbox";
-            this.symbol_ok_checkbox.Size = new System.Drawing.Size(325, 24);
-            this.symbol_ok_checkbox.TabIndex = 11;
-            this.symbol_ok_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // symbol_checked_by_textbox
-            // 
-            this.symbol_checked_by_textbox.AcceptsReturn = true;
-            this.symbol_checked_by_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.symbol_checked_by_textbox.Location = new System.Drawing.Point(133, 493);
-            this.symbol_checked_by_textbox.Name = "symbol_checked_by_textbox";
-            this.symbol_checked_by_textbox.Size = new System.Drawing.Size(325, 22);
-            this.symbol_checked_by_textbox.TabIndex = 12;
-            // 
             // footprint_checked_date_datetimepicker
             // 
             this.footprint_checked_date_datetimepicker.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -667,44 +739,66 @@
             this.symbol_checked_date_datetimepicker.Size = new System.Drawing.Size(325, 22);
             this.symbol_checked_date_datetimepicker.TabIndex = 13;
             // 
-            // footprint_ok_checkbox
+            // hoizontal_separator_0
             // 
-            this.footprint_ok_checkbox.AutoSize = true;
-            this.footprint_ok_checkbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.footprint_ok_checkbox.Location = new System.Drawing.Point(133, 618);
-            this.footprint_ok_checkbox.Name = "footprint_ok_checkbox";
-            this.footprint_ok_checkbox.Size = new System.Drawing.Size(325, 24);
-            this.footprint_ok_checkbox.TabIndex = 15;
-            this.footprint_ok_checkbox.UseVisualStyleBackColor = true;
+            this.hoizontal_separator_0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.hoizontal_separator_0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.main_table.SetColumnSpan(this.hoizontal_separator_0, 2);
+            this.hoizontal_separator_0.Location = new System.Drawing.Point(3, 226);
+            this.hoizontal_separator_0.Name = "hoizontal_separator_0";
+            this.hoizontal_separator_0.Size = new System.Drawing.Size(455, 2);
+            this.hoizontal_separator_0.TabIndex = 120;
             // 
-            // footprint_checked_by_textbox
+            // panel1
             // 
-            this.footprint_checked_by_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.footprint_checked_by_textbox.Location = new System.Drawing.Point(133, 648);
-            this.footprint_checked_by_textbox.Name = "footprint_checked_by_textbox";
-            this.footprint_checked_by_textbox.Size = new System.Drawing.Size(325, 22);
-            this.footprint_checked_by_textbox.TabIndex = 16;
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.main_table);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(482, 653);
+            this.panel1.TabIndex = 1;
             // 
-            // where_used_textbox
+            // tools_table
             // 
-            this.where_used_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.where_used_textbox.Location = new System.Drawing.Point(133, 773);
-            this.where_used_textbox.Multiline = true;
-            this.where_used_textbox.Name = "where_used_textbox";
-            this.where_used_textbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.where_used_textbox.Size = new System.Drawing.Size(325, 54);
-            this.where_used_textbox.TabIndex = 19;
+            this.tools_table.ColumnCount = 2;
+            this.tools_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tools_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tools_table.Controls.Add(this.discard_changes_button, 0, 0);
+            this.tools_table.Controls.Add(this.submit_button, 0, 0);
+            this.tools_table.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tools_table.Location = new System.Drawing.Point(133, 868);
+            this.tools_table.Name = "tools_table";
+            this.tools_table.RowCount = 1;
+            this.tools_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tools_table.Size = new System.Drawing.Size(240, 24);
+            this.tools_table.TabIndex = 126;
             // 
             // submit_button
             // 
             this.submit_button.Dock = System.Windows.Forms.DockStyle.Left;
-            this.submit_button.Location = new System.Drawing.Point(133, 868);
-            this.submit_button.MaximumSize = new System.Drawing.Size(200, 0);
+            this.submit_button.Location = new System.Drawing.Point(0, 0);
+            this.submit_button.Margin = new System.Windows.Forms.Padding(0);
+            this.submit_button.MaximumSize = new System.Drawing.Size(100, 0);
+            this.submit_button.MinimumSize = new System.Drawing.Size(100, 0);
             this.submit_button.Name = "submit_button";
             this.submit_button.Size = new System.Drawing.Size(100, 24);
-            this.submit_button.TabIndex = 20;
+            this.submit_button.TabIndex = 22;
             this.submit_button.Text = "Submit";
             this.submit_button.UseVisualStyleBackColor = true;
+            // 
+            // discard_changes_button
+            // 
+            this.discard_changes_button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.discard_changes_button.Location = new System.Drawing.Point(120, 0);
+            this.discard_changes_button.Margin = new System.Windows.Forms.Padding(0);
+            this.discard_changes_button.MaximumSize = new System.Drawing.Size(100, 0);
+            this.discard_changes_button.MinimumSize = new System.Drawing.Size(100, 0);
+            this.discard_changes_button.Name = "discard_changes_button";
+            this.discard_changes_button.Size = new System.Drawing.Size(100, 24);
+            this.discard_changes_button.TabIndex = 23;
+            this.discard_changes_button.Text = "Discard";
+            this.discard_changes_button.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -713,7 +807,7 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(482, 653);
             this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(350, 250);
+            this.MinimumSize = new System.Drawing.Size(450, 250);
             this.Name = "Main";
             this.Text = "HatTrick Database Editor";
             this.main_table.ResumeLayout(false);
@@ -726,6 +820,7 @@
             this.symbol_file_table.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tools_table.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -780,6 +875,13 @@
         private System.Windows.Forms.TextBox where_used_textbox;
         private System.Windows.Forms.TextBox footprint_checked_by_textbox;
         private System.Windows.Forms.CheckBox footprint_ok_checkbox;
+        private System.Windows.Forms.Label hoizontal_separator_0;
+        private System.Windows.Forms.Label horizontal_separator_1;
+        private System.Windows.Forms.Label horizontal_separator_3;
+        private System.Windows.Forms.Label horizontal_separator_2;
+        private System.Windows.Forms.Label horizontal_separator_4;
+        private System.Windows.Forms.TableLayoutPanel tools_table;
+        private System.Windows.Forms.Button discard_changes_button;
         private System.Windows.Forms.Button submit_button;
     }
 }
