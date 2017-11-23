@@ -80,16 +80,16 @@
             this.footprint_checked_date_datetimepicker = new System.Windows.Forms.DateTimePicker();
             this.symbol_checked_date_datetimepicker = new System.Windows.Forms.DateTimePicker();
             this.hoizontal_separator_0 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.tools_table = new System.Windows.Forms.TableLayoutPanel();
-            this.submit_button = new System.Windows.Forms.Button();
             this.discard_changes_button = new System.Windows.Forms.Button();
+            this.submit_button = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.main_table.SuspendLayout();
             this.datasheet_table.SuspendLayout();
             this.footprint_file_table.SuspendLayout();
             this.symbol_file_table.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tools_table.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // main_table
@@ -749,16 +749,6 @@
             this.hoizontal_separator_0.Size = new System.Drawing.Size(455, 2);
             this.hoizontal_separator_0.TabIndex = 120;
             // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.main_table);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(482, 653);
-            this.panel1.TabIndex = 1;
-            // 
             // tools_table
             // 
             this.tools_table.ColumnCount = 2;
@@ -774,6 +764,19 @@
             this.tools_table.Size = new System.Drawing.Size(240, 24);
             this.tools_table.TabIndex = 126;
             // 
+            // discard_changes_button
+            // 
+            this.discard_changes_button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.discard_changes_button.Location = new System.Drawing.Point(120, 0);
+            this.discard_changes_button.Margin = new System.Windows.Forms.Padding(0);
+            this.discard_changes_button.MaximumSize = new System.Drawing.Size(100, 0);
+            this.discard_changes_button.MinimumSize = new System.Drawing.Size(100, 0);
+            this.discard_changes_button.Name = "discard_changes_button";
+            this.discard_changes_button.Size = new System.Drawing.Size(100, 24);
+            this.discard_changes_button.TabIndex = 23;
+            this.discard_changes_button.Text = "Discard";
+            this.discard_changes_button.UseVisualStyleBackColor = true;
+            // 
             // submit_button
             // 
             this.submit_button.Dock = System.Windows.Forms.DockStyle.Left;
@@ -787,18 +790,15 @@
             this.submit_button.Text = "Submit";
             this.submit_button.UseVisualStyleBackColor = true;
             // 
-            // discard_changes_button
+            // panel1
             // 
-            this.discard_changes_button.Dock = System.Windows.Forms.DockStyle.Left;
-            this.discard_changes_button.Location = new System.Drawing.Point(120, 0);
-            this.discard_changes_button.Margin = new System.Windows.Forms.Padding(0);
-            this.discard_changes_button.MaximumSize = new System.Drawing.Size(100, 0);
-            this.discard_changes_button.MinimumSize = new System.Drawing.Size(100, 0);
-            this.discard_changes_button.Name = "discard_changes_button";
-            this.discard_changes_button.Size = new System.Drawing.Size(100, 24);
-            this.discard_changes_button.TabIndex = 23;
-            this.discard_changes_button.Text = "Discard";
-            this.discard_changes_button.UseVisualStyleBackColor = true;
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.main_table);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(482, 653);
+            this.panel1.TabIndex = 1;
             // 
             // Main
             // 
@@ -818,9 +818,9 @@
             this.footprint_file_table.PerformLayout();
             this.symbol_file_table.ResumeLayout(false);
             this.symbol_file_table.PerformLayout();
+            this.tools_table.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tools_table.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
