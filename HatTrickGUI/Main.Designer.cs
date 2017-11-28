@@ -228,7 +228,7 @@
             this.where_used_textbox.Name = "where_used_textbox";
             this.where_used_textbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.where_used_textbox.Size = new System.Drawing.Size(325, 54);
-            this.where_used_textbox.TabIndex = 19;
+            this.where_used_textbox.TabIndex = 190;
             // 
             // footprint_checked_by_textbox
             // 
@@ -236,7 +236,7 @@
             this.footprint_checked_by_textbox.Location = new System.Drawing.Point(133, 648);
             this.footprint_checked_by_textbox.Name = "footprint_checked_by_textbox";
             this.footprint_checked_by_textbox.Size = new System.Drawing.Size(325, 22);
-            this.footprint_checked_by_textbox.TabIndex = 16;
+            this.footprint_checked_by_textbox.TabIndex = 160;
             // 
             // footprint_ok_checkbox
             // 
@@ -245,7 +245,7 @@
             this.footprint_ok_checkbox.Location = new System.Drawing.Point(133, 618);
             this.footprint_ok_checkbox.Name = "footprint_ok_checkbox";
             this.footprint_ok_checkbox.Size = new System.Drawing.Size(325, 24);
-            this.footprint_ok_checkbox.TabIndex = 15;
+            this.footprint_ok_checkbox.TabIndex = 150;
             this.footprint_ok_checkbox.UseVisualStyleBackColor = true;
             // 
             // symbol_checked_by_textbox
@@ -255,7 +255,7 @@
             this.symbol_checked_by_textbox.Location = new System.Drawing.Point(133, 493);
             this.symbol_checked_by_textbox.Name = "symbol_checked_by_textbox";
             this.symbol_checked_by_textbox.Size = new System.Drawing.Size(325, 22);
-            this.symbol_checked_by_textbox.TabIndex = 12;
+            this.symbol_checked_by_textbox.TabIndex = 120;
             // 
             // symbol_ok_checkbox
             // 
@@ -264,7 +264,7 @@
             this.symbol_ok_checkbox.Location = new System.Drawing.Point(133, 463);
             this.symbol_ok_checkbox.Name = "symbol_ok_checkbox";
             this.symbol_ok_checkbox.Size = new System.Drawing.Size(325, 24);
-            this.symbol_ok_checkbox.TabIndex = 11;
+            this.symbol_ok_checkbox.TabIndex = 110;
             this.symbol_ok_checkbox.UseVisualStyleBackColor = true;
             // 
             // datasheet_table
@@ -304,7 +304,7 @@
             this.datasheet_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.datasheet_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.datasheet_table.Size = new System.Drawing.Size(331, 30);
-            this.datasheet_table.TabIndex = 18;
+            this.datasheet_table.TabIndex = 180;
             // 
             // datasheet_text_box
             // 
@@ -320,7 +320,7 @@
             this.datasheet_button.Location = new System.Drawing.Point(294, 3);
             this.datasheet_button.Name = "datasheet_button";
             this.datasheet_button.Size = new System.Drawing.Size(34, 24);
-            this.datasheet_button.TabIndex = 1;
+            this.datasheet_button.TabIndex = 10;
             this.datasheet_button.Text = "...";
             this.datasheet_button.UseVisualStyleBackColor = true;
             // 
@@ -341,7 +341,7 @@
             this.footprint_file_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.footprint_file_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.footprint_file_table.Size = new System.Drawing.Size(331, 30);
-            this.footprint_file_table.TabIndex = 14;
+            this.footprint_file_table.TabIndex = 140;
             // 
             // footprint_file_textbox
             // 
@@ -357,7 +357,7 @@
             this.footprint_file_button.Location = new System.Drawing.Point(294, 3);
             this.footprint_file_button.Name = "footprint_file_button";
             this.footprint_file_button.Size = new System.Drawing.Size(34, 24);
-            this.footprint_file_button.TabIndex = 1;
+            this.footprint_file_button.TabIndex = 10;
             this.footprint_file_button.Text = "...";
             this.footprint_file_button.UseVisualStyleBackColor = true;
             // 
@@ -367,7 +367,7 @@
             this.mouser_pn_textbox.Location = new System.Drawing.Point(133, 368);
             this.mouser_pn_textbox.Name = "mouser_pn_textbox";
             this.mouser_pn_textbox.Size = new System.Drawing.Size(325, 22);
-            this.mouser_pn_textbox.TabIndex = 9;
+            this.mouser_pn_textbox.TabIndex = 90;
             // 
             // newark_pn_textbox
             // 
@@ -375,7 +375,7 @@
             this.newark_pn_textbox.Location = new System.Drawing.Point(133, 338);
             this.newark_pn_textbox.Name = "newark_pn_textbox";
             this.newark_pn_textbox.Size = new System.Drawing.Size(325, 22);
-            this.newark_pn_textbox.TabIndex = 8;
+            this.newark_pn_textbox.TabIndex = 80;
             // 
             // digikey_pn_textbox
             // 
@@ -383,7 +383,7 @@
             this.digikey_pn_textbox.Location = new System.Drawing.Point(133, 308);
             this.digikey_pn_textbox.Name = "digikey_pn_textbox";
             this.digikey_pn_textbox.Size = new System.Drawing.Size(325, 22);
-            this.digikey_pn_textbox.TabIndex = 7;
+            this.digikey_pn_textbox.TabIndex = 70;
             // 
             // manufacturer_pn_textbox
             // 
@@ -391,7 +391,7 @@
             this.manufacturer_pn_textbox.Location = new System.Drawing.Point(133, 278);
             this.manufacturer_pn_textbox.Name = "manufacturer_pn_textbox";
             this.manufacturer_pn_textbox.Size = new System.Drawing.Size(325, 22);
-            this.manufacturer_pn_textbox.TabIndex = 6;
+            this.manufacturer_pn_textbox.TabIndex = 60;
             // 
             // manufacturer_textbox
             // 
@@ -399,7 +399,7 @@
             this.manufacturer_textbox.Location = new System.Drawing.Point(133, 248);
             this.manufacturer_textbox.Name = "manufacturer_textbox";
             this.manufacturer_textbox.Size = new System.Drawing.Size(325, 22);
-            this.manufacturer_textbox.TabIndex = 5;
+            this.manufacturer_textbox.TabIndex = 50;
             // 
             // where_used_label
             // 
@@ -409,7 +409,7 @@
             this.where_used_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.where_used_label.Name = "where_used_label";
             this.where_used_label.Size = new System.Drawing.Size(122, 54);
-            this.where_used_label.TabIndex = 119;
+            this.where_used_label.TabIndex = 1190;
             this.where_used_label.Text = "Where Used";
             this.where_used_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -421,7 +421,7 @@
             this.datasheet_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.datasheet_label.Name = "datasheet_label";
             this.datasheet_label.Size = new System.Drawing.Size(122, 24);
-            this.datasheet_label.TabIndex = 118;
+            this.datasheet_label.TabIndex = 1180;
             this.datasheet_label.Text = "Datasheet";
             this.datasheet_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -433,7 +433,7 @@
             this.footprint_checked_date_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.footprint_checked_date_label.Name = "footprint_checked_date_label";
             this.footprint_checked_date_label.Size = new System.Drawing.Size(122, 24);
-            this.footprint_checked_date_label.TabIndex = 117;
+            this.footprint_checked_date_label.TabIndex = 1170;
             this.footprint_checked_date_label.Text = "Checked Date";
             this.footprint_checked_date_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -445,7 +445,7 @@
             this.footprint_checked_by_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.footprint_checked_by_label.Name = "footprint_checked_by_label";
             this.footprint_checked_by_label.Size = new System.Drawing.Size(122, 24);
-            this.footprint_checked_by_label.TabIndex = 116;
+            this.footprint_checked_by_label.TabIndex = 1160;
             this.footprint_checked_by_label.Text = "Checked By";
             this.footprint_checked_by_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -457,7 +457,7 @@
             this.footprint_ok_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.footprint_ok_label.Name = "footprint_ok_label";
             this.footprint_ok_label.Size = new System.Drawing.Size(122, 24);
-            this.footprint_ok_label.TabIndex = 115;
+            this.footprint_ok_label.TabIndex = 1150;
             this.footprint_ok_label.Text = "Footprint OK";
             this.footprint_ok_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -469,7 +469,7 @@
             this.footprint_file_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.footprint_file_label.Name = "footprint_file_label";
             this.footprint_file_label.Size = new System.Drawing.Size(122, 24);
-            this.footprint_file_label.TabIndex = 114;
+            this.footprint_file_label.TabIndex = 1140;
             this.footprint_file_label.Text = "Footprint File";
             this.footprint_file_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -481,7 +481,7 @@
             this.symbol_checked_date_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.symbol_checked_date_label.Name = "symbol_checked_date_label";
             this.symbol_checked_date_label.Size = new System.Drawing.Size(122, 24);
-            this.symbol_checked_date_label.TabIndex = 113;
+            this.symbol_checked_date_label.TabIndex = 1130;
             this.symbol_checked_date_label.Text = "Checked Date";
             this.symbol_checked_date_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -493,7 +493,7 @@
             this.symbol_checked_by_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.symbol_checked_by_label.Name = "symbol_checked_by_label";
             this.symbol_checked_by_label.Size = new System.Drawing.Size(122, 24);
-            this.symbol_checked_by_label.TabIndex = 112;
+            this.symbol_checked_by_label.TabIndex = 1120;
             this.symbol_checked_by_label.Text = "Checked By";
             this.symbol_checked_by_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -505,7 +505,7 @@
             this.symbol_ok_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.symbol_ok_label.Name = "symbol_ok_label";
             this.symbol_ok_label.Size = new System.Drawing.Size(122, 24);
-            this.symbol_ok_label.TabIndex = 111;
+            this.symbol_ok_label.TabIndex = 1110;
             this.symbol_ok_label.Text = "Symbol OK";
             this.symbol_ok_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -517,7 +517,7 @@
             this.symbol_file_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.symbol_file_label.Name = "symbol_file_label";
             this.symbol_file_label.Size = new System.Drawing.Size(122, 24);
-            this.symbol_file_label.TabIndex = 110;
+            this.symbol_file_label.TabIndex = 1100;
             this.symbol_file_label.Text = "Symbol File";
             this.symbol_file_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -529,7 +529,7 @@
             this.mouser_pn_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.mouser_pn_label.Name = "mouser_pn_label";
             this.mouser_pn_label.Size = new System.Drawing.Size(122, 24);
-            this.mouser_pn_label.TabIndex = 109;
+            this.mouser_pn_label.TabIndex = 1090;
             this.mouser_pn_label.Text = "Mouser PN";
             this.mouser_pn_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -541,7 +541,7 @@
             this.newark_pn_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.newark_pn_label.Name = "newark_pn_label";
             this.newark_pn_label.Size = new System.Drawing.Size(122, 24);
-            this.newark_pn_label.TabIndex = 108;
+            this.newark_pn_label.TabIndex = 1080;
             this.newark_pn_label.Text = "Newark PN";
             this.newark_pn_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -553,7 +553,7 @@
             this.digikey_pn_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.digikey_pn_label.Name = "digikey_pn_label";
             this.digikey_pn_label.Size = new System.Drawing.Size(122, 24);
-            this.digikey_pn_label.TabIndex = 107;
+            this.digikey_pn_label.TabIndex = 1070;
             this.digikey_pn_label.Text = "Digikey PN";
             this.digikey_pn_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -565,7 +565,7 @@
             this.manufacturer_pn_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.manufacturer_pn_label.Name = "manufacturer_pn_label";
             this.manufacturer_pn_label.Size = new System.Drawing.Size(122, 24);
-            this.manufacturer_pn_label.TabIndex = 106;
+            this.manufacturer_pn_label.TabIndex = 1060;
             this.manufacturer_pn_label.Text = "Manufacturer PN";
             this.manufacturer_pn_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -577,7 +577,7 @@
             this.part_description_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.part_description_label.Name = "part_description_label";
             this.part_description_label.Size = new System.Drawing.Size(122, 84);
-            this.part_description_label.TabIndex = 103;
+            this.part_description_label.TabIndex = 1030;
             this.part_description_label.Text = "Part Description";
             this.part_description_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -589,7 +589,7 @@
             this.nxdn_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.nxdn_label.Name = "nxdn_label";
             this.nxdn_label.Size = new System.Drawing.Size(122, 24);
-            this.nxdn_label.TabIndex = 101;
+            this.nxdn_label.TabIndex = 1010;
             this.nxdn_label.Text = "NXDN";
             this.nxdn_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -600,7 +600,7 @@
             this.nxdn_combobox.Location = new System.Drawing.Point(133, 33);
             this.nxdn_combobox.Name = "nxdn_combobox";
             this.nxdn_combobox.Size = new System.Drawing.Size(325, 24);
-            this.nxdn_combobox.TabIndex = 1;
+            this.nxdn_combobox.TabIndex = 10;
             // 
             // part_type_combobox
             // 
@@ -619,7 +619,7 @@
             this.part_value_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.part_value_label.Name = "part_value_label";
             this.part_value_label.Size = new System.Drawing.Size(122, 24);
-            this.part_value_label.TabIndex = 102;
+            this.part_value_label.TabIndex = 1020;
             this.part_value_label.Text = "Part Value";
             this.part_value_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -629,7 +629,7 @@
             this.part_value_textbox.Location = new System.Drawing.Point(133, 63);
             this.part_value_textbox.Name = "part_value_textbox";
             this.part_value_textbox.Size = new System.Drawing.Size(325, 22);
-            this.part_value_textbox.TabIndex = 2;
+            this.part_value_textbox.TabIndex = 20;
             // 
             // part_type_label
             // 
@@ -639,7 +639,7 @@
             this.part_type_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.part_type_label.Name = "part_type_label";
             this.part_type_label.Size = new System.Drawing.Size(122, 24);
-            this.part_type_label.TabIndex = 100;
+            this.part_type_label.TabIndex = 1000;
             this.part_type_label.Text = "Part Type";
             this.part_type_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -651,7 +651,7 @@
             this.part_description_textbox.Name = "part_description_textbox";
             this.part_description_textbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.part_description_textbox.Size = new System.Drawing.Size(325, 84);
-            this.part_description_textbox.TabIndex = 3;
+            this.part_description_textbox.TabIndex = 30;
             // 
             // rohs_label
             // 
@@ -661,7 +661,7 @@
             this.rohs_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.rohs_label.Name = "rohs_label";
             this.rohs_label.Size = new System.Drawing.Size(122, 24);
-            this.rohs_label.TabIndex = 104;
+            this.rohs_label.TabIndex = 1040;
             this.rohs_label.Text = "RoHS?";
             this.rohs_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -672,7 +672,7 @@
             this.rohs_checkbox.Location = new System.Drawing.Point(133, 183);
             this.rohs_checkbox.Name = "rohs_checkbox";
             this.rohs_checkbox.Size = new System.Drawing.Size(325, 24);
-            this.rohs_checkbox.TabIndex = 4;
+            this.rohs_checkbox.TabIndex = 40;
             this.rohs_checkbox.UseVisualStyleBackColor = true;
             // 
             // manufacturer_label
@@ -683,7 +683,7 @@
             this.manufacturer_label.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.manufacturer_label.Name = "manufacturer_label";
             this.manufacturer_label.Size = new System.Drawing.Size(122, 24);
-            this.manufacturer_label.TabIndex = 105;
+            this.manufacturer_label.TabIndex = 1050;
             this.manufacturer_label.Text = "Manufacturer";
             this.manufacturer_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -703,7 +703,7 @@
             this.symbol_file_table.RowCount = 1;
             this.symbol_file_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.symbol_file_table.Size = new System.Drawing.Size(331, 30);
-            this.symbol_file_table.TabIndex = 10;
+            this.symbol_file_table.TabIndex = 100;
             // 
             // symbol_file_textbox
             // 
@@ -719,7 +719,7 @@
             this.symbol_file_button.Location = new System.Drawing.Point(294, 3);
             this.symbol_file_button.Name = "symbol_file_button";
             this.symbol_file_button.Size = new System.Drawing.Size(34, 24);
-            this.symbol_file_button.TabIndex = 1;
+            this.symbol_file_button.TabIndex = 10;
             this.symbol_file_button.Text = "...";
             this.symbol_file_button.UseVisualStyleBackColor = true;
             // 
@@ -729,7 +729,7 @@
             this.footprint_checked_date_datetimepicker.Location = new System.Drawing.Point(133, 678);
             this.footprint_checked_date_datetimepicker.Name = "footprint_checked_date_datetimepicker";
             this.footprint_checked_date_datetimepicker.Size = new System.Drawing.Size(325, 22);
-            this.footprint_checked_date_datetimepicker.TabIndex = 17;
+            this.footprint_checked_date_datetimepicker.TabIndex = 170;
             // 
             // symbol_checked_date_datetimepicker
             // 
@@ -737,7 +737,7 @@
             this.symbol_checked_date_datetimepicker.Location = new System.Drawing.Point(133, 523);
             this.symbol_checked_date_datetimepicker.Name = "symbol_checked_date_datetimepicker";
             this.symbol_checked_date_datetimepicker.Size = new System.Drawing.Size(325, 22);
-            this.symbol_checked_date_datetimepicker.TabIndex = 13;
+            this.symbol_checked_date_datetimepicker.TabIndex = 130;
             // 
             // hoizontal_separator_0
             // 
@@ -762,7 +762,7 @@
             this.tools_table.RowCount = 1;
             this.tools_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tools_table.Size = new System.Drawing.Size(240, 24);
-            this.tools_table.TabIndex = 126;
+            this.tools_table.TabIndex = 200;
             // 
             // discard_changes_button
             // 
@@ -773,7 +773,7 @@
             this.discard_changes_button.MinimumSize = new System.Drawing.Size(100, 0);
             this.discard_changes_button.Name = "discard_changes_button";
             this.discard_changes_button.Size = new System.Drawing.Size(100, 24);
-            this.discard_changes_button.TabIndex = 23;
+            this.discard_changes_button.TabIndex = 10;
             this.discard_changes_button.Text = "Discard";
             this.discard_changes_button.UseVisualStyleBackColor = true;
             // 
@@ -786,7 +786,7 @@
             this.submit_button.MinimumSize = new System.Drawing.Size(100, 0);
             this.submit_button.Name = "submit_button";
             this.submit_button.Size = new System.Drawing.Size(100, 24);
-            this.submit_button.TabIndex = 22;
+            this.submit_button.TabIndex = 0;
             this.submit_button.Text = "Submit";
             this.submit_button.UseVisualStyleBackColor = true;
             // 
