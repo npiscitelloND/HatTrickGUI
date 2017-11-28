@@ -12,25 +12,17 @@ namespace HatTrickGUI
 {
     public partial class Main : Form
     {
-
-        private System.Data.OleDb.OleDbConnection conn = new System.Data.OleDb.OleDbConnection();
-
+        HatTrickDataSet ds = new HatTrickDataSet();
         public Main()
         {
             InitializeComponent();
-            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data source= C:\Users\piscitellon\Documents\VisualStudio_Work\HatTrickGUI\sample_data\demo.accdb";
-            try
+
+            List<string> tables = new List<string>();
+            foreach( DataTable table in ds.Tables )
             {
-                conn.Open();
+                tables.Add(table.ToString());
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to connect to data source");
-            }
-            finally
-            {
-                conn.Close();
-            }
+            part_type_combobox.DataSource = tables;
         }
     }
 }
