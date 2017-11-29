@@ -13,27 +13,39 @@ namespace HatTrickGUI
     public partial class Main : Form
     {
         HatTrickDataSet ds = new HatTrickDataSet();
+        List<Tuple<string, DataTable>> tables = new List<Tuple<string, DataTable>>();
+        List<Tuple<object, DataRow>> rows = new List<Tuple<object, DataRow>>();
+
         public Main()
         {
             InitializeComponent();
+            part_type_combobox.SelectedIndexChanged += new System.EventHandler(PartTypeSelected);
 
-            Dictionary<string, DataTable> tables = new Dictionary<string, DataTable>();
-            foreach( DataTable table in ds.Tables )
+            foreach ( DataTable table in ds.Tables )
             {
-                tables.Add(table.ToString(), table);
+                tables.Add(Tuple.Create(table.TableName, table));
             }
-            part_type_combobox.DataSource = tables.Keys.ToArray();
+            part_type_combobox.DataSource = tables;
+            part_type_combobox.DisplayMember = "Item1";
 
-            Dictionary<string, DataRow> rows = new Dictionary<string, DataRow>();
-            if (tables.ContainsKey(part_type_combobox.SelectedText))
-            {
-                foreach (DataRow row in tables[part_type_combobox.SelectedText].Rows)
-                {
-                    rows.Add(row.ToString(), row);
-                }
-            }
-            nxdn_combobox.DataSource = rows.Keys.ToArray();
         }
 
+        public void PartTypeSelected( object sender_raw, System.EventArgs e)
+        {
+            if( tables[part_type_combobox.SelectedIndex].Item2.Rows == null)
+            {
+                MessageBox.Show("null!");
+            }
+            else
+            {
+                MessageBox.Show(ds.Microcontrollers.Rows.Count.ToString());
+            }
+            foreach (DataRow row in tables[part_type_combobox.SelectedIndex].Item2.Rows)
+            {
+                rows.Add(Tuple.Create(row["NXN"], row));
+            }
+            nxdn_combobox.DataSource = rows;
+            //nxdn_combobox.DisplayMember = "Item1";
+        }
     }
 }

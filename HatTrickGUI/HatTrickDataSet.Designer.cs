@@ -995,9 +995,9 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `ICs` WHERE ((`blah` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?)) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN` = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS NULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = 1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND `Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Checked By` IS NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` IS NULL) OR (`Footprint Checked Date` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `ICs` WHERE ((`NXN` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?)) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN` = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS NULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol Path` IS NULL) OR (`Symbol Path` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = 1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND `Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Path` IS NULL) OR (`Footprint Path` = ?)) AND ((? = 1 AND `Footprint Checked By` IS NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` IS NULL) OR (`Footprint Checked Date` = ?)) AND ((? = 1 AND `Datasheet Path` IS NULL) OR (`Datasheet Path` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Part_Value", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Manufacturer", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Original, true, null));
@@ -1014,6 +1014,8 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Newark_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Newark PN", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Where_Used", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Where Used", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Where_Used", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Where Used", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Symbol_Path", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Path", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Symbol_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Path", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Symbol_OK", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol OK", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Symbol_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol OK", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Symbol_Checked_By", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked By", global::System.Data.DataRowVersion.Original, true, null));
@@ -1022,15 +1024,19 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Symbol_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked Date", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_OK", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint OK", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint OK", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_Path", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Path", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Path", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_Checked_By", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked By", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_Checked_By", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked By", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Datasheet_Path", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Datasheet Path", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Datasheet_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Datasheet Path", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO `ICs` (`blah`, `Part Value`, `Manufacturer`, `Manufacturer PN`, `ROHS`, `Mouser PN`, `Digikey PN`, `Newark PN`, `Part Description`, `Where Used`, `Field1`, `Symbol OK`, `Symbol Checked By`, `Symbol Checked Date`, `Field2`, `Footprint OK`, `Footprint Checked By`, `Footprint Checked Date`, `Field3`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO `ICs` (`NXN`, `Part Value`, `Manufacturer`, `Manufacturer PN`, `ROHS`, `Mouser PN`, `Digikey PN`, `Newark PN`, `Part Description`, `Where Used`, `Symbol Path`, `Symbol OK`, `Symbol Checked By`, `Symbol Checked Date`, `Footprint OK`, `Footprint Path`, `Footprint Checked By`, `Footprint Checked Date`, `Datasheet Path`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer PN", global::System.Data.DataRowVersion.Current, false, null));
@@ -1040,20 +1046,39 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Newark_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Newark PN", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Part_Description", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Description", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Where_Used", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Where Used", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field1", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field1", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Path", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol OK", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_Checked_By", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked By", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked Date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field2", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field2", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint OK", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Path", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Checked_By", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked By", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field3", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field3", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Datasheet_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Datasheet Path", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `ICs` SET `blah` = ?, `Part Value` = ?, `Manufacturer` = ?, `Manufacturer PN` = ?, `ROHS` = ?, `Mouser PN` = ?, `Digikey PN` = ?, `Newark PN` = ?, `Part Description` = ?, `Where Used` = ?, `Field1` = ?, `Symbol OK` = ?, `Symbol Checked By` = ?, `Symbol Checked Date` = ?, `Field2` = ?, `Footprint OK` = ?, `Footprint Checked By` = ?, `Footprint Checked Date` = ?, `Field3` = ? WHERE ((`blah` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?)) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN` = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS NULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = 1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND `Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Checked By` IS NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` IS NULL) OR (`Footprint Checked Date` = ?)))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE `ICs` SET `NXN` = ?, `Part Value` = ?, `Manufacturer` = ?, `Manufacturer P" +
+                "N` = ?, `ROHS` = ?, `Mouser PN` = ?, `Digikey PN` = ?, `Newark PN` = ?, `Part De" +
+                "scription` = ?, `Where Used` = ?, `Symbol Path` = ?, `Symbol OK` = ?, `Symbol Ch" +
+                "ecked By` = ?, `Symbol Checked Date` = ?, `Footprint OK` = ?, `Footprint Path` =" +
+                " ?, `Footprint Checked By` = ?, `Footprint Checked Date` = ?, `Datasheet Path` =" +
+                " ? WHERE ((`NXN` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?" +
+                ")) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 " +
+                "AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS" +
+                "` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN`" +
+                " = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 " +
+                "AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS N" +
+                "ULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol Path` IS NULL) OR (`Symbol P" +
+                "ath` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = " +
+                "1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND" +
+                " `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND " +
+                "`Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Path" +
+                "` IS NULL) OR (`Footprint Path` = ?)) AND ((? = 1 AND `Footprint Checked By` IS " +
+                "NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` " +
+                "IS NULL) OR (`Footprint Checked Date` = ?)) AND ((? = 1 AND `Datasheet Path` IS " +
+                "NULL) OR (`Datasheet Path` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer PN", global::System.Data.DataRowVersion.Current, false, null));
@@ -1063,16 +1088,16 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Newark_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Newark PN", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Part_Description", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Description", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Where_Used", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Where Used", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field1", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field1", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Path", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol OK", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_Checked_By", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked By", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Symbol_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked Date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field2", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field2", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint OK", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Path", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Checked_By", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked By", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field3", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field3", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Datasheet_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Datasheet Path", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Part_Value", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Manufacturer", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Original, true, null));
@@ -1089,6 +1114,8 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Newark_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Newark PN", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Where_Used", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Where Used", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Where_Used", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Where Used", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Symbol_Path", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Path", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Symbol_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Path", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Symbol_OK", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol OK", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Symbol_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol OK", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Symbol_Checked_By", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked By", global::System.Data.DataRowVersion.Original, true, null));
@@ -1097,10 +1124,14 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Symbol_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Symbol Checked Date", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_OK", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint OK", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_OK", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint OK", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_Path", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Path", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Path", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_Checked_By", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked By", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_Checked_By", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked By", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Datasheet_Path", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Datasheet Path", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Datasheet_Path", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Datasheet Path", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1116,7 +1147,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT blah, [Part Value], Manufacturer, [Manufacturer PN], ROHS, [Mouser PN], [Digikey PN], [Newark PN], [Part Description], [Where Used], Field1, [Symbol OK], [Symbol Checked By], [Symbol Checked Date], Field2, [Footprint OK], [Footprint Checked By], [Footprint Checked Date], Field3 FROM ICs";
+            this._commandCollection[0].CommandText = @"SELECT NXN, [Part Value], Manufacturer, [Manufacturer PN], ROHS, [Mouser PN], [Digikey PN], [Newark PN], [Part Description], [Where Used], [Symbol Path], [Symbol OK], [Symbol Checked By], [Symbol Checked Date], [Footprint OK], [Footprint Path], [Footprint Checked By], [Footprint Checked Date], [Datasheet Path] FROM ICs";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1177,12 +1208,30 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_blah, string Original_Part_Value, string Original_Manufacturer, string Original_Manufacturer_PN, bool Original_ROHS, string Original_Mouser_PN, string Original_Digikey_PN, string Original_Newark_PN, string Original_Where_Used, bool Original_Symbol_OK, global::System.Nullable<int> Original_Symbol_Checked_By, global::System.Nullable<global::System.DateTime> Original_Symbol_Checked_Date, bool Original_Footprint_OK, string Original_Footprint_Checked_By, global::System.Nullable<global::System.DateTime> Original_Footprint_Checked_Date) {
-            if ((Original_blah == null)) {
-                throw new global::System.ArgumentNullException("Original_blah");
+        public virtual int Delete(
+                    string Original_NXN, 
+                    string Original_Part_Value, 
+                    string Original_Manufacturer, 
+                    string Original_Manufacturer_PN, 
+                    bool Original_ROHS, 
+                    string Original_Mouser_PN, 
+                    string Original_Digikey_PN, 
+                    string Original_Newark_PN, 
+                    string Original_Where_Used, 
+                    string Original_Symbol_Path, 
+                    bool Original_Symbol_OK, 
+                    global::System.Nullable<int> Original_Symbol_Checked_By, 
+                    global::System.Nullable<global::System.DateTime> Original_Symbol_Checked_Date, 
+                    bool Original_Footprint_OK, 
+                    string Original_Footprint_Path, 
+                    string Original_Footprint_Checked_By, 
+                    global::System.Nullable<global::System.DateTime> Original_Footprint_Checked_Date, 
+                    string Original_Datasheet_Path) {
+            if ((Original_NXN == null)) {
+                throw new global::System.ArgumentNullException("Original_NXN");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_blah));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_NXN));
             }
             if ((Original_Part_Value == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -1242,41 +1291,65 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_Where_Used));
             }
-            this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[18].Value = ((bool)(Original_Symbol_OK));
-            if ((Original_Symbol_Checked_By.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((int)(Original_Symbol_Checked_By.Value));
+            if ((Original_Symbol_Path == null)) {
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_Symbol_Path));
             }
-            if ((Original_Symbol_Checked_Date.HasValue == true)) {
+            this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
+            this.Adapter.DeleteCommand.Parameters[20].Value = ((bool)(Original_Symbol_OK));
+            if ((Original_Symbol_Checked_By.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((System.DateTime)(Original_Symbol_Checked_Date.Value));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(Original_Symbol_Checked_By.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[24].Value = ((bool)(Original_Footprint_OK));
-            if ((Original_Footprint_Checked_By == null)) {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[26].Value = global::System.DBNull.Value;
+            if ((Original_Symbol_Checked_Date.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[24].Value = ((System.DateTime)(Original_Symbol_Checked_Date.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original_Footprint_Checked_By));
+                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
-            if ((Original_Footprint_Checked_Date.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[28].Value = ((System.DateTime)(Original_Footprint_Checked_Date.Value));
-            }
-            else {
+            this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
+            this.Adapter.DeleteCommand.Parameters[26].Value = ((bool)(Original_Footprint_OK));
+            if ((Original_Footprint_Path == null)) {
                 this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original_Footprint_Path));
+            }
+            if ((Original_Footprint_Checked_By == null)) {
+                this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_Footprint_Checked_By));
+            }
+            if ((Original_Footprint_Checked_Date.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[32].Value = ((System.DateTime)(Original_Footprint_Checked_Date.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[32].Value = global::System.DBNull.Value;
+            }
+            if ((Original_Datasheet_Path == null)) {
+                this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[34].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[34].Value = ((string)(Original_Datasheet_Path));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1299,7 +1372,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    string blah, 
+                    string NXN, 
                     string Part_Value, 
                     string Manufacturer, 
                     string Manufacturer_PN, 
@@ -1309,20 +1382,20 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                     string Newark_PN, 
                     string Part_Description, 
                     string Where_Used, 
-                    string Field1, 
+                    string Symbol_Path, 
                     bool Symbol_OK, 
                     global::System.Nullable<int> Symbol_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Symbol_Checked_Date, 
-                    string Field2, 
                     bool Footprint_OK, 
+                    string Footprint_Path, 
                     string Footprint_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Footprint_Checked_Date, 
-                    string Field3) {
-            if ((blah == null)) {
-                throw new global::System.ArgumentNullException("blah");
+                    string Datasheet_Path) {
+            if ((NXN == null)) {
+                throw new global::System.ArgumentNullException("NXN");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(blah));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NXN));
             }
             if ((Part_Value == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -1373,11 +1446,11 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Where_Used));
             }
-            if ((Field1 == null)) {
+            if ((Symbol_Path == null)) {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Field1));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Symbol_Path));
             }
             this.Adapter.InsertCommand.Parameters[11].Value = ((bool)(Symbol_OK));
             if ((Symbol_Checked_By.HasValue == true)) {
@@ -1392,13 +1465,13 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            if ((Field2 == null)) {
-                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            this.Adapter.InsertCommand.Parameters[14].Value = ((bool)(Footprint_OK));
+            if ((Footprint_Path == null)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(Field2));
+                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(Footprint_Path));
             }
-            this.Adapter.InsertCommand.Parameters[15].Value = ((bool)(Footprint_OK));
             if ((Footprint_Checked_By == null)) {
                 this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
@@ -1411,11 +1484,11 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
-            if ((Field3 == null)) {
+            if ((Datasheet_Path == null)) {
                 this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(Field3));
+                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(Datasheet_Path));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1438,7 +1511,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string blah, 
+                    string NXN, 
                     string Part_Value, 
                     string Manufacturer, 
                     string Manufacturer_PN, 
@@ -1448,16 +1521,16 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                     string Newark_PN, 
                     string Part_Description, 
                     string Where_Used, 
-                    string Field1, 
+                    string Symbol_Path, 
                     bool Symbol_OK, 
                     global::System.Nullable<int> Symbol_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Symbol_Checked_Date, 
-                    string Field2, 
                     bool Footprint_OK, 
+                    string Footprint_Path, 
                     string Footprint_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Footprint_Checked_Date, 
-                    string Field3, 
-                    string Original_blah, 
+                    string Datasheet_Path, 
+                    string Original_NXN, 
                     string Original_Part_Value, 
                     string Original_Manufacturer, 
                     string Original_Manufacturer_PN, 
@@ -1466,17 +1539,20 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                     string Original_Digikey_PN, 
                     string Original_Newark_PN, 
                     string Original_Where_Used, 
+                    string Original_Symbol_Path, 
                     bool Original_Symbol_OK, 
                     global::System.Nullable<int> Original_Symbol_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Original_Symbol_Checked_Date, 
                     bool Original_Footprint_OK, 
+                    string Original_Footprint_Path, 
                     string Original_Footprint_Checked_By, 
-                    global::System.Nullable<global::System.DateTime> Original_Footprint_Checked_Date) {
-            if ((blah == null)) {
-                throw new global::System.ArgumentNullException("blah");
+                    global::System.Nullable<global::System.DateTime> Original_Footprint_Checked_Date, 
+                    string Original_Datasheet_Path) {
+            if ((NXN == null)) {
+                throw new global::System.ArgumentNullException("NXN");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(blah));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(NXN));
             }
             if ((Part_Value == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -1527,11 +1603,11 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Where_Used));
             }
-            if ((Field1 == null)) {
+            if ((Symbol_Path == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Field1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Symbol_Path));
             }
             this.Adapter.UpdateCommand.Parameters[11].Value = ((bool)(Symbol_OK));
             if ((Symbol_Checked_By.HasValue == true)) {
@@ -1546,13 +1622,13 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            if ((Field2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((bool)(Footprint_OK));
+            if ((Footprint_Path == null)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Field2));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Footprint_Path));
             }
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((bool)(Footprint_OK));
             if ((Footprint_Checked_By == null)) {
                 this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
@@ -1565,17 +1641,17 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
-            if ((Field3 == null)) {
+            if ((Datasheet_Path == null)) {
                 this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Field3));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Datasheet_Path));
             }
-            if ((Original_blah == null)) {
-                throw new global::System.ArgumentNullException("Original_blah");
+            if ((Original_NXN == null)) {
+                throw new global::System.ArgumentNullException("Original_NXN");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_blah));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_NXN));
             }
             if ((Original_Part_Value == null)) {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
@@ -1635,41 +1711,65 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_Where_Used));
             }
-            this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[37].Value = ((bool)(Original_Symbol_OK));
-            if ((Original_Symbol_Checked_By.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((int)(Original_Symbol_Checked_By.Value));
+            if ((Original_Symbol_Path == null)) {
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[39].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_Symbol_Path));
             }
-            if ((Original_Symbol_Checked_Date.HasValue == true)) {
+            this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
+            this.Adapter.UpdateCommand.Parameters[39].Value = ((bool)(Original_Symbol_OK));
+            if ((Original_Symbol_Checked_By.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((System.DateTime)(Original_Symbol_Checked_Date.Value));
+                this.Adapter.UpdateCommand.Parameters[41].Value = ((int)(Original_Symbol_Checked_By.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[41].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[43].Value = ((bool)(Original_Footprint_OK));
-            if ((Original_Footprint_Checked_By == null)) {
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[45].Value = global::System.DBNull.Value;
+            if ((Original_Symbol_Checked_Date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[43].Value = ((System.DateTime)(Original_Symbol_Checked_Date.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[45].Value = ((string)(Original_Footprint_Checked_By));
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[43].Value = global::System.DBNull.Value;
             }
-            if ((Original_Footprint_Checked_Date.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[47].Value = ((System.DateTime)(Original_Footprint_Checked_Date.Value));
-            }
-            else {
+            this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
+            this.Adapter.UpdateCommand.Parameters[45].Value = ((bool)(Original_Footprint_OK));
+            if ((Original_Footprint_Path == null)) {
                 this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[47].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[47].Value = ((string)(Original_Footprint_Path));
+            }
+            if ((Original_Footprint_Checked_By == null)) {
+                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[49].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[49].Value = ((string)(Original_Footprint_Checked_By));
+            }
+            if ((Original_Footprint_Checked_Date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[51].Value = ((System.DateTime)(Original_Footprint_Checked_Date.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[51].Value = global::System.DBNull.Value;
+            }
+            if ((Original_Datasheet_Path == null)) {
+                this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[53].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[53].Value = ((string)(Original_Datasheet_Path));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1808,9 +1908,9 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Microcontrollers` WHERE ((`blah` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?)) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN` = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS NULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = 1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND `Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Checked By` IS NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` IS NULL) OR (`Footprint Checked Date` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Microcontrollers` WHERE ((`NXN` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?)) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN` = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS NULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = 1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND `Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Checked By` IS NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` IS NULL) OR (`Footprint Checked Date` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Part_Value", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Manufacturer", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Original, true, null));
@@ -1841,9 +1941,9 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO `Microcontrollers` (`blah`, `Part Value`, `Manufacturer`, `Manufacturer PN`, `ROHS`, `Mouser PN`, `Digikey PN`, `Newark PN`, `Part Description`, `Where Used`, `Field1`, `Symbol OK`, `Symbol Checked By`, `Symbol Checked Date`, `Field2`, `Footprint OK`, `Footprint Checked By`, `Footprint Checked Date`, `Field3`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO `Microcontrollers` (`NXN`, `Part Value`, `Manufacturer`, `Manufacturer PN`, `ROHS`, `Mouser PN`, `Digikey PN`, `Newark PN`, `Part Description`, `Where Used`, `Field1`, `Symbol OK`, `Symbol Checked By`, `Symbol Checked Date`, `Field2`, `Footprint OK`, `Footprint Checked By`, `Footprint Checked Date`, `Field3`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer PN", global::System.Data.DataRowVersion.Current, false, null));
@@ -1864,9 +1964,9 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field3", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field3", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Microcontrollers` SET `blah` = ?, `Part Value` = ?, `Manufacturer` = ?, `Manufacturer PN` = ?, `ROHS` = ?, `Mouser PN` = ?, `Digikey PN` = ?, `Newark PN` = ?, `Part Description` = ?, `Where Used` = ?, `Field1` = ?, `Symbol OK` = ?, `Symbol Checked By` = ?, `Symbol Checked Date` = ?, `Field2` = ?, `Footprint OK` = ?, `Footprint Checked By` = ?, `Footprint Checked Date` = ?, `Field3` = ? WHERE ((`blah` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?)) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN` = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS NULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = 1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND `Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Checked By` IS NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` IS NULL) OR (`Footprint Checked Date` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Microcontrollers` SET `NXN` = ?, `Part Value` = ?, `Manufacturer` = ?, `Manufacturer PN` = ?, `ROHS` = ?, `Mouser PN` = ?, `Digikey PN` = ?, `Newark PN` = ?, `Part Description` = ?, `Where Used` = ?, `Field1` = ?, `Symbol OK` = ?, `Symbol Checked By` = ?, `Symbol Checked Date` = ?, `Field2` = ?, `Footprint OK` = ?, `Footprint Checked By` = ?, `Footprint Checked Date` = ?, `Field3` = ? WHERE ((`NXN` = ?) AND ((? = 1 AND `Part Value` IS NULL) OR (`Part Value` = ?)) AND ((? = 1 AND `Manufacturer` IS NULL) OR (`Manufacturer` = ?)) AND ((? = 1 AND `Manufacturer PN` IS NULL) OR (`Manufacturer PN` = ?)) AND ((? = 1 AND `ROHS` IS NULL) OR (`ROHS` = ?)) AND ((? = 1 AND `Mouser PN` IS NULL) OR (`Mouser PN` = ?)) AND ((? = 1 AND `Digikey PN` IS NULL) OR (`Digikey PN` = ?)) AND ((? = 1 AND `Newark PN` IS NULL) OR (`Newark PN` = ?)) AND ((? = 1 AND `Where Used` IS NULL) OR (`Where Used` = ?)) AND ((? = 1 AND `Symbol OK` IS NULL) OR (`Symbol OK` = ?)) AND ((? = 1 AND `Symbol Checked By` IS NULL) OR (`Symbol Checked By` = ?)) AND ((? = 1 AND `Symbol Checked Date` IS NULL) OR (`Symbol Checked Date` = ?)) AND ((? = 1 AND `Footprint OK` IS NULL) OR (`Footprint OK` = ?)) AND ((? = 1 AND `Footprint Checked By` IS NULL) OR (`Footprint Checked By` = ?)) AND ((? = 1 AND `Footprint Checked Date` IS NULL) OR (`Footprint Checked Date` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Manufacturer_PN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer PN", global::System.Data.DataRowVersion.Current, false, null));
@@ -1885,7 +1985,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Checked_By", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked By", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Footprint_Checked_Date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Footprint Checked Date", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Field3", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Field3", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_blah", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "blah", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NXN", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NXN", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Part_Value", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Part_Value", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Part Value", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Manufacturer", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Manufacturer", global::System.Data.DataRowVersion.Original, true, null));
@@ -1929,7 +2029,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT blah, [Part Value], Manufacturer, [Manufacturer PN], ROHS, [Mouser PN], [Digikey PN], [Newark PN], [Part Description], [Where Used], Field1, [Symbol OK], [Symbol Checked By], [Symbol Checked Date], Field2, [Footprint OK], [Footprint Checked By], [Footprint Checked Date], Field3 FROM Microcontrollers";
+            this._commandCollection[0].CommandText = @"SELECT NXN, [Part Value], Manufacturer, [Manufacturer PN], ROHS, [Mouser PN], [Digikey PN], [Newark PN], [Part Description], [Where Used], Field1, [Symbol OK], [Symbol Checked By], [Symbol Checked Date], Field2, [Footprint OK], [Footprint Checked By], [Footprint Checked Date], Field3 FROM Microcontrollers";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1990,12 +2090,12 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_blah, string Original_Part_Value, string Original_Manufacturer, string Original_Manufacturer_PN, bool Original_ROHS, string Original_Mouser_PN, string Original_Digikey_PN, string Original_Newark_PN, string Original_Where_Used, bool Original_Symbol_OK, string Original_Symbol_Checked_By, global::System.Nullable<global::System.DateTime> Original_Symbol_Checked_Date, bool Original_Footprint_OK, string Original_Footprint_Checked_By, global::System.Nullable<global::System.DateTime> Original_Footprint_Checked_Date) {
-            if ((Original_blah == null)) {
-                throw new global::System.ArgumentNullException("Original_blah");
+        public virtual int Delete(string Original_NXN, string Original_Part_Value, string Original_Manufacturer, string Original_Manufacturer_PN, bool Original_ROHS, string Original_Mouser_PN, string Original_Digikey_PN, string Original_Newark_PN, string Original_Where_Used, bool Original_Symbol_OK, string Original_Symbol_Checked_By, global::System.Nullable<global::System.DateTime> Original_Symbol_Checked_Date, bool Original_Footprint_OK, string Original_Footprint_Checked_By, global::System.Nullable<global::System.DateTime> Original_Footprint_Checked_Date) {
+            if ((Original_NXN == null)) {
+                throw new global::System.ArgumentNullException("Original_NXN");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_blah));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_NXN));
             }
             if ((Original_Part_Value == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -2112,7 +2212,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    string blah, 
+                    string NXN, 
                     string Part_Value, 
                     string Manufacturer, 
                     string Manufacturer_PN, 
@@ -2131,11 +2231,11 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                     string Footprint_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Footprint_Checked_Date, 
                     string Field3) {
-            if ((blah == null)) {
-                throw new global::System.ArgumentNullException("blah");
+            if ((NXN == null)) {
+                throw new global::System.ArgumentNullException("NXN");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(blah));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NXN));
             }
             if ((Part_Value == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -2251,7 +2351,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string blah, 
+                    string NXN, 
                     string Part_Value, 
                     string Manufacturer, 
                     string Manufacturer_PN, 
@@ -2270,7 +2370,7 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                     string Footprint_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Footprint_Checked_Date, 
                     string Field3, 
-                    string Original_blah, 
+                    string Original_NXN, 
                     string Original_Part_Value, 
                     string Original_Manufacturer, 
                     string Original_Manufacturer_PN, 
@@ -2285,11 +2385,11 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
                     bool Original_Footprint_OK, 
                     string Original_Footprint_Checked_By, 
                     global::System.Nullable<global::System.DateTime> Original_Footprint_Checked_Date) {
-            if ((blah == null)) {
-                throw new global::System.ArgumentNullException("blah");
+            if ((NXN == null)) {
+                throw new global::System.ArgumentNullException("NXN");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(blah));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(NXN));
             }
             if ((Part_Value == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -2384,11 +2484,11 @@ namespace HatTrickGUI.HatTrickDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Field3));
             }
-            if ((Original_blah == null)) {
-                throw new global::System.ArgumentNullException("Original_blah");
+            if ((Original_NXN == null)) {
+                throw new global::System.ArgumentNullException("Original_NXN");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_blah));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_NXN));
             }
             if ((Original_Part_Value == null)) {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));

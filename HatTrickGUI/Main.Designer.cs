@@ -81,6 +81,7 @@
             this.symbol_checked_date_datetimepicker = new System.Windows.Forms.DateTimePicker();
             this.hoizontal_separator_0 = new System.Windows.Forms.Label();
             this.tools_table = new System.Windows.Forms.TableLayoutPanel();
+            this.push_button = new System.Windows.Forms.Button();
             this.discard_changes_button = new System.Windows.Forms.Button();
             this.submit_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -751,9 +752,11 @@
             // 
             // tools_table
             // 
-            this.tools_table.ColumnCount = 2;
-            this.tools_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tools_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tools_table.ColumnCount = 3;
+            this.tools_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+            this.tools_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+            this.tools_table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tools_table.Controls.Add(this.push_button, 0, 0);
             this.tools_table.Controls.Add(this.discard_changes_button, 0, 0);
             this.tools_table.Controls.Add(this.submit_button, 0, 0);
             this.tools_table.Dock = System.Windows.Forms.DockStyle.Left;
@@ -761,18 +764,29 @@
             this.tools_table.Name = "tools_table";
             this.tools_table.RowCount = 1;
             this.tools_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tools_table.Size = new System.Drawing.Size(240, 24);
+            this.tools_table.Size = new System.Drawing.Size(325, 24);
             this.tools_table.TabIndex = 200;
+            // 
+            // push_button
+            // 
+            this.push_button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.push_button.Location = new System.Drawing.Point(170, 0);
+            this.push_button.Margin = new System.Windows.Forms.Padding(0);
+            this.push_button.MaximumSize = new System.Drawing.Size(100, 0);
+            this.push_button.Name = "push_button";
+            this.push_button.Size = new System.Drawing.Size(80, 24);
+            this.push_button.TabIndex = 20;
+            this.push_button.Text = "Push";
+            this.push_button.UseVisualStyleBackColor = true;
             // 
             // discard_changes_button
             // 
             this.discard_changes_button.Dock = System.Windows.Forms.DockStyle.Left;
-            this.discard_changes_button.Location = new System.Drawing.Point(120, 0);
+            this.discard_changes_button.Location = new System.Drawing.Point(85, 0);
             this.discard_changes_button.Margin = new System.Windows.Forms.Padding(0);
             this.discard_changes_button.MaximumSize = new System.Drawing.Size(100, 0);
-            this.discard_changes_button.MinimumSize = new System.Drawing.Size(100, 0);
             this.discard_changes_button.Name = "discard_changes_button";
-            this.discard_changes_button.Size = new System.Drawing.Size(100, 24);
+            this.discard_changes_button.Size = new System.Drawing.Size(80, 24);
             this.discard_changes_button.TabIndex = 10;
             this.discard_changes_button.Text = "Discard";
             this.discard_changes_button.UseVisualStyleBackColor = true;
@@ -783,9 +797,8 @@
             this.submit_button.Location = new System.Drawing.Point(0, 0);
             this.submit_button.Margin = new System.Windows.Forms.Padding(0);
             this.submit_button.MaximumSize = new System.Drawing.Size(100, 0);
-            this.submit_button.MinimumSize = new System.Drawing.Size(100, 0);
             this.submit_button.Name = "submit_button";
-            this.submit_button.Size = new System.Drawing.Size(100, 24);
+            this.submit_button.Size = new System.Drawing.Size(80, 24);
             this.submit_button.TabIndex = 0;
             this.submit_button.Text = "Submit";
             this.submit_button.UseVisualStyleBackColor = true;
@@ -883,6 +896,7 @@
         private System.Windows.Forms.TableLayoutPanel tools_table;
         private System.Windows.Forms.Button discard_changes_button;
         private System.Windows.Forms.Button submit_button;
+        private System.Windows.Forms.Button push_button;
     }
 }
 
