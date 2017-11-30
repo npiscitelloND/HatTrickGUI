@@ -95,6 +95,7 @@
             // 
             // main_table
             // 
+            this.main_table.AutoScroll = true;
             this.main_table.AutoSize = true;
             this.main_table.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.main_table.ColumnCount = 2;
@@ -150,7 +151,7 @@
             this.main_table.Location = new System.Drawing.Point(0, 0);
             this.main_table.Margin = new System.Windows.Forms.Padding(0);
             this.main_table.Name = "main_table";
-            this.main_table.RowCount = 27;
+            this.main_table.RowCount = 28;
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -178,7 +179,8 @@
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.main_table.Size = new System.Drawing.Size(461, 905);
+            this.main_table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.main_table.Size = new System.Drawing.Size(461, 1105);
             this.main_table.TabIndex = 0;
             // 
             // horizontal_separator_4
